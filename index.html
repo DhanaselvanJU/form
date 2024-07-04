@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3 - Create a Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2 style="text-align: center; padding:20px 10px" class="title">Student Registration From</h2>
+    <section class="form" >
+        <form action="" autocomplete="off">
+            <h2 style="text-align: center; color:whitesmoke">Register</h2>
+            <fieldset>
+                <input type="text" placeholder="Enter your Roll Number" id="reg" required>
+            </fieldset>
+            <fieldset>
+                <input type="text" placeholder="Enter your Name" id="name" required>
+            </fieldset>
+            <fieldset>
+                <select name="dept" id="dept" required>
+                    <option value="">Select the department</option>
+                    <option value="cse">CSE</option>
+                    <option value="it">IT</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="aiml">AIML</option>
+                    <option value="mech">MECH</option>
+                    <option value="auto">Automobile</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <input type="text" placeholder="Enter your 10th Mark" id="ten" required>
+            </fieldset>
+            <fieldset>
+                <input type="text" placeholder="Enter your 12th Mark" id="12" required>
+            </fieldset>
+            <fieldset>
+                <input type="text" placeholder="Enter your Degree Percentage" id="cgpa" required>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button>Cancel</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.title {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 248, 220, 0.8);
+}
+
+body {
+    background-image: url(../hero.jpg);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+h2 {
+    font-size: 32px;
+    color: red;
+    font-weight: bold;
+
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 420px;
+    height: fit-content;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+fieldset {
+    margin: 16px auto;
+    border: none;
+}
+
+input, select {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    min-width: 200px;
+    border: 1px solid;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+button[type="submit"] {
+    background-color: green;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+}
+
+button[type="submit"]:hover, button:hover {
+    background-color: gray;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+input:focus {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.4);
+    outline: none;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .form {
+        width: fit-content;
+    }
+
+    input, select {
+        font-size: 12px;
+    }
+
+    button, button[type="submit"]{
+        font-size: 12px;
+    }
+}
